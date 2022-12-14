@@ -167,5 +167,10 @@ float avg(int a, int b , int c){
     return result;
 }
    
+   
+   
+   //---------------------------------Qno 2   convert degree to celcius by using functions ----------------------//
+
+#include 
   
 
