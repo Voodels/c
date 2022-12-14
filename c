@@ -102,3 +102,33 @@ void printTable(int num ){//formal parameter
     printf("%d\n",i*num);
     }
 }
+
+
+######
+//adding two numbers by using functions 
+#include <stdio.h>
+int sum(int a ,int b);
+int main()
+{
+    int Num1,Num2;
+    printf("the number 1 is ");
+    scanf("%d",&Num1);
+    
+    printf("the number 2 is ");
+    scanf("%d",&Num2);
+    
+    
+    char add;
+    add = Num1+Num2;
+    
+    sum(Num1,Num2);
+    
+
+    return 0;
+}
+int sum(int a,int b)
+{
+    int result ;
+    result = a+b;
+    return printf("%d\n",result);
+}
