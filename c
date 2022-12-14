@@ -132,3 +132,40 @@ int sum(int a,int b)
     result = a+b;
     return printf("%d\n",result);
 }
+
+
+
+  /*----------------------------Practice Set _ Functions and Recursons ---------------------------------------*/
+  
+  // Q.1 . Write a program using functions to find average of three numbers 
+#include<stdio.h>
+  
+float avg(int a, int b ,int c);
+  
+int main(){
+    int x,y,z;
+    printf("Enter the value of x\n");
+    scanf("%d\n",&x);
+    
+    printf("Enter the value of y\n");
+    scanf("%d\n",&y);
+    
+    printf("Enter the value of z\n");
+    scanf("%d\n",&z);
+    
+    printf("the value of average if x y z is %f ", avg(x,y,z));
+    
+    
+    //printf("The value of average is %f",avg( float a ));
+    
+    return 0;
+}
+float avg(int a, int b , int c){
+
+    float result;
+    result =(float) (a+b+c)/3;
+    return result;
+}
+   
+  
+
