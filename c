@@ -172,5 +172,84 @@ float avg(int a, int b , int c){
    //---------------------------------Qno 2   convert degree to celcius by using functions ----------------------//
 
 #include 
+
+
+
+//Revision of chapter 4------------------------ 
+
+
+
+
+//Multiplication table of a given number
+/*#include <stdio.h>
+
+int main()
+{
+    int x;
+    int num;
+    
+    
+   printf("Enter digit : ");
+   scanf("%d",&num);
+    
+    for(x=0;x<=10;++x){
+        printf("%dx%d=%d\n",x,num,x*num);
+    }
+    
+    return 0;
+}*/
+
+//Q2 Multiplication table of a number in reverse order 
+
+/*#include<stdio.h>
+int main(){
+    int i,Num;
+    printf("Value of Num ");
+    scanf("%d",&Num);
+    
+    for(i = 10 ;i;--i){
+        printf("%dx%d=%d\n",i,Num,i*Num);
+    }
+}*/
+
+//Q5 program to find first n natural numbers 
+
+/*#include<stdio.h>
+int main(){
+    int X ,sum =0 , n;
+    
+    printf("The value of n is ");
+    scanf("%d",&n);
+    
+    for(X=0;X<=n;++X){
+        sum += X;
+        
+    }
+    printf("The Sum is: %d\n",sum);
+
+    return 0;
+    
+}*/
+//do it with while and do while loop 
+
+
+
+//Qfactorial 
+/*#include<stdio.h>
+int main(){
+    
+    int i=0,n,Factorial=1;
+    
+    printf("Enter the value of n");
+    scanf("%d\n",&n);
+    
+    for(i = 1 ;i <= n;i++){
+        Factorial*=i;
+    }printf("%d",Factorial);
+    return 0;
+}*/
+
+
+
   
 
