@@ -250,6 +250,89 @@ int main(){
 }*/
 
 
+// Loops revision
+//Q.1 write a program to print natural numbers from 10 to 20 using While loops
+
+
+/*#include <stdio.h>
+int main(){
+    float num2P;
+    num2P  = 10;
+    while(num2P<=20){
+        printf("%f\n",num2P);
+        ++num2P;
+    }
+    return 0;*/
+    
+
+// do while loops 
+
+/*#include <stdio.h>
+
+int main()
+{
+    int  i = 0;
+    
+    do{
+        printf("The value of i is %d\n",i);
+        i++;
+    }while(i<=10);//semi condition is required and while is executed at least one time 
+    
+    return 0 ;
+}*/
+//Q.2 program to print first natural numbers using do while loops 
+/*#include <stdio.h>
+
+int main()
+{
+    int  i = 0 ,Num;
+    printf("The value of Num is :");
+    
+    scanf("%d",&Num);
+    
+    
+    do{
+        printf(" %d\n",i);
+        i++;
+    }while(i<=Num);//semi condition is required and while is executed at least one time 
+    
+    return 0 ;
+}*/
+
+
+// FOR loop
+
+//program to print first natural numbers using do while loops 
+
+/*#include <stdio.h>
+int main(){
+    int i,Till;
+    printf("The value of Till is : ");
+    scanf("%d",&Till);
+    for( i = 0; i <= Till;i++){
+        printf("%d\n",i);
+    }
+    return 0;
+}*/
+
+
+//-------- PRACTICE SET 4 --------
+//Q.1
+//write a multiplication table fo a given number 
+
+#include<stdio.h>
+int main(){
+    int x,num;
+    printf("the value of whose multiplication table is required is : ");
+    scanf("%d\n",num);
+    
+   // for (x=1;x<=10;++x){
+    //    printf("%d",num*x);
+    }
+    return 0 ;
+}
+
+
 
   
 
