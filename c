@@ -170,6 +170,8 @@ float avg(int a, int b , int c){
    
    
    //---------------------------------Qno 2   convert degree to celcius by using functions ----------------------//
+   {
+
 
 #include 
 
@@ -330,6 +332,56 @@ int main(){
     //    printf("%d",num*x);
     }
     return 0 ;
+}
+
+
+//finding area of rectangle with functions 
+#include <stdio.h>
+
+int area(int a,int b);
+int main()
+{
+    int length,breadth;
+    printf("The length of rectangle is : ");
+    scanf("%d",&length);
+
+    printf("The breadth  of rectangle is : ");
+    scanf("%d",&breadth);
+    
+    printf("The value of area is %d\n ",area(length,breadth));
+
+
+    return 0;
+}
+int area(int a,int b){
+    int area;
+    area = a*b;
+    return area;
+}
+
+//Celcius to degeree using functions 
+#include <stdio.h>
+
+float Temp(float x);
+
+int main()
+{
+    float Cel;
+    
+    printf("The value of Temperature in Celcius is : ");
+    scanf("%f",&Cel);
+    
+    printf("The value of Tempreature in farenheit is : %f",Temp(Cel));
+
+    return 0;
+}
+
+float Temp(float x){
+    
+    float conv;
+    
+    conv = x * 1.8 + 32;
+    return conv;
 }
 
 
