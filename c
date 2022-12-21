@@ -384,6 +384,32 @@ float Temp(float x){
     return conv;
 }
 
+  //---------------------------------Qno 2   convert degree to celcius by using functions ----------------------//
+   {
+#include <stdio.h>
+
+float Temp(float x);
+
+int main()
+{
+    float Cel;
+    
+    printf("The value of Temperature in Celcius is : ");
+    scanf("%f",&Cel);
+    
+    printf("The value of Tempreature in farenheit is : %f",Temp(Cel));
+
+    return 0;
+}
+
+float Temp(float x){
+    
+    float conv;
+    
+    conv = x * 1.8 + 32;
+    return conv;
+}
+
 
 
   
