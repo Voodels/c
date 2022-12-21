@@ -410,7 +410,3 @@ float Temp(float x){
     return conv;
 }
 
-
-
-  
-
