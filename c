@@ -434,3 +434,75 @@ int main ()
 }
 
 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;#PRACTICE SET POINTERS#;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+//
+1. write a program to print the address of a vaiable.Use this address to get the value of this variable
+
+#include<stdio.h>
+int main(){
+    int Var1 = 37;
+    int*Poi = &Var1;
+    
+    printf("The address of Var1 is %u\n ",&Var1);
+    printf("The address of Var1 is %u\n ",Poi);
+    printf("The value at address of our pointer is : %u\n",*Poi);
+    printf("The address of our pointer is %u \n ",&Poi);
+    printf("%u\n",*(*(&Poi)));
+    return 0;
+}
+
+2.////////
+//SWAPING VALUES BY PASSING THE VALUES 
+#include<stdio.h>
+void swap(int *x,int *y);
+int main(){
+    int a = 37;
+    int b = 73;
+    //VALUES BEFORE FUNCTION CALL
+    printf("The value of a before Function call is : %d\n",a);
+    printf("The value of b before Function call is : %d\n",b);
+    //FUNCTION CALL TO SWITCH VALUES 
+    swap(&a,&b);
+    //VALUES AFTER FUNCTION CALL
+    printf("The value of a before Function call is : %d\n",a);
+    printf("The value of b before Function call is : %d\n",b);
+    
+    return 0;
+
+}
+void swap(int *x,int *y){
+    int temp ;
+    
+    temp = *x;
+    *x = *y;
+    *y = temp;
+}
+
+
+
+
+
+
+*imp === 
+//Write a program using the functions which calculate  the sum 
+//and average of two numbers .Use pointers and print the values in MaIN();
+
+#include<stdio.h>
+
+void SumandAVG(int a,int b,int *sum,float *avg){
+    
+   *sum = a+b;
+   *avg =(float) *sum/2;
+    
+}
+int main(){
+    int x= 3;
+    int y= 7;
+    float avg;
+    int sum;
+    SumandAVG(x,y,&sum,&avg);
+    //
+    printf("The value of sum is : %d\n",sum);
+    printf("The value of avg is : %f\n",avg);
+    return 0;
+}
