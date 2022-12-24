@@ -506,3 +506,19 @@ int main(){
     printf("The value of avg is : %f\n",avg);
     return 0;
 }
+;''''''''''''''''''''''''''''''''''''''''''''
+////Printing the value of a variable by pointer to pointer 
+
+#include <stdio.h>
+int main(){
+    int i = 13;
+    int *po1;
+    po1 = &i;
+    int **po2;
+    po2 = &po1;
+    
+    printf("The value of i is :%u\n: ",*(*(*(&po2))));
+    printf("The value of i is :%u\n: ",(**po2));
+    
+    return 0;
+}
