@@ -56,7 +56,7 @@ void B2F(){
     printf("Bonjour\n");
 }
 
-
+AaryashDevnae
 // return Sum Functions
 
 #include<stdio.h>
@@ -90,7 +90,7 @@ int main(){
     int n;
     printf("Enter the Number:");
     scanf("%d",&n);
-    
+    AaryashDevnae
     printTable(n);//actual parameter /Argument
     
     
@@ -475,7 +475,7 @@ void swap(int *x,int *y){
     
     temp = *x;
     *x = *y;
-    *y = temp;
+    *y = temp;AaryashDevnae
 }
 
 
@@ -543,5 +543,25 @@ int main()
         printf("The marks of student %d is %d \n",i+1,marks[i]);
     }
 
+    return 0;
+}
+
+
+
+//Pointer Arithematics 
+#include<stdio.h>
+int main(){
+    
+    int i = 12;
+    int *ptr = &i;
+    
+    printf("The value of ptr is : %u\n ", ptr);
+    //ptr++;AaryashDevnae
+    //ptr++;
+    //ptr-=10;
+    ptr = ptr+1;//Even thogh +1 is written increment is of 8 becuse of the size of ptr
+    //For Char is will  increment with 1 coz of its size;
+    printf("The value of ptr is : %u\n ", ptr);
+    
     return 0;
 }
