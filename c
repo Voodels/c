@@ -590,3 +590,115 @@ main ()
   return 0;
 }
 
+
+.........................................................
+//Write a program to accept marks of five students in an array and print them to the screen.
+//Initialization of an array
+/*
+#include<stdio.h>
+int main(){
+    int Mo5[5];
+    for (int i =0;i < 5;i++){
+        printf("Enter the marks of student %d \n",i+1);
+        scanf("%d",&Mo5[i]);
+          
+    }
+    for (int i =0;i < 5;i++){
+    printf("the marks of %d student are : %d \n",i+1,Mo5[i]);  
+    }
+    return 0;
+    
+}*/
+/*#include <stdio.h>
+int main(){
+    int arr1[5] ={7,9,2,8,1};
+    int *pARRY;
+    pARRY  = &arr1;
+    printf("%u\n",pARRY);
+    printf("%u\n",*pARRY);
+    printf("%u\n",&arr1);//* = value at address of ; & = Address of ;
+    pARRY++;
+    printf("%u\n",*pARRY);
+    
+    
+    
+    return 0;
+    
+}*/
+
+/*Multidimensional arrays
+
+An array can be of 2 dimension / 3 dimension / n dimensions.
+
+A 2-dimensional array can be defined as:
+
+int arr [3][2] ={
+                 {1,4}
+                 {7,9}
+                 {11;22}
+};
+
+We can access the elements of this array as arr [0] [0], arr [0] [1] & so on...
+
+At arr [0] [0] value would be 1 and at arr [0] [1] value would be 4.
+2-D arrays in Memory
+
+ A 2-d array like a 1-d array is stored in contiguous memory blocks like this:
+
+Quick Quiz: Create a 2-d array by taking input from the user. Write a display function to print the content of this 2-d array on the screen.
+
+Chapter 7- Practice Set
+
+    Create an array of 10 numbers. Verify using pointer arithmetic that (ptr+2) points to the third element where ptr is a pointer pointing to the first element of the array.
+    If S[3] is a 1-D array of integers, then *(S+3) refers to the third element:
+
+    True
+    False
+    Depends
+
+    Write a program to create an array of 10 integers and store a multiplication table of 5 in it.
+    Repeat problem 3 for a general input provided by the user using scanf()
+    Write a program containing a function that reverses the array passed to it.
+    Write a program containing functions that counts the number of positive integers in an array.
+    Create an array of size 3x10 containing multiplication tables of the numbers 2,7 and 9, respectively.
+    Repeat problem 7 for a custom input given by the user.
+    Create a three-dimensional array and print the address of its elements in increasing order.
+
+
+*/
+/*#include<stdio.h>
+int main(){
+    int 2dArr[i][j];
+    for(int i=0;i<2,i++){
+        for(int j = 0;j<2;j++){
+            printf("Enter the value of term %d : ",%2dArr[j]);
+            scanf("%d",& 2dArr[j]);
+            
+        }
+        printf("Enter the value of term %d : ",%2dArr[j]);
+            scanf("%d",& 2dArr[j]);
+        }
+        
+            
+    }
+    printf("%d",2dArr);
+    return 0;
+}*/
+#include <stdio.h>
+int main(){
+    int NoStu = 3;
+    int NoSub = 5;
+     int marks[3][5];
+     for(int i=0;i<NoStu;i++){
+         for(int j=0;j<NoSub;j++){
+             printf("Enter the marks of student %d in subject %d \n",i+1,j+1);
+             scanf("%d",&marks[i][j]);
+            }
+     }
+     for(int i=0;i<NoStu;i++){
+         for(int j=0;j<NoSub;j++){
+             printf("Enter the marks of student %d in subject %d id %d\n",i+1,j+1,marks[i][j]);
+         }
+     }
+return 0;
+}
