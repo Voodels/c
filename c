@@ -279,7 +279,7 @@ int main(){
     int X ,sum =0 , n;
     
     printf("The value of n is ");
-    scanf("%d",&n);
+    scanf("%d",&n);rands to binary 
     
     for(X=0;X<=n;++X){
         sum += X;
@@ -1117,3 +1117,101 @@ int main(){
     return 0;
     
 }
+////////////////////////////////////ARRAYS PRACTICE SET //////////////////////////////////////////////////////
+/*
+#include <stdio.h>
+
+int main()
+{
+    int MuAr[10];
+    int digit;
+    printf("The value whose multiplication table required is :");
+    scanf("%d",&digit);
+    for(int i = 0;i<10;i++){
+        MuAr[i] = digit*(i+1);
+    }
+    for(int i = 0;i<10;i++){
+        printf("the multiplication table of %d is : %dx%d=%d\n",digit,digit,i+1,MuAr[i]);
+    }
+    return 0;
+}
+*/
+
+//Qno.6
+//Write a program to count the number of positive integers in an array
+#include <stdio.h>
+int main(){
+    int arr[10]={1,3,5,-1,-4,-6,45,-3,-5,4};
+    int countposi=0;
+    int countnegi=0;
+    for(int i =0;i<10;i++)
+    {
+        
+        if(arr[i]>0){
+        countposi++;
+            
+        }
+        else
+        { countnegi++ ;
+        }
+        
+    }        
+    printf("%d\n",countposi);    
+    printf("%d\n",countnegi);
+    
+    return 0;
+}
+
+
+//Logic for multiplication table is :
+#include<stdio.h>
+int main(){
+    int Arr[10];//declaring array ;
+    int n;
+    
+    //declaring n
+    printf("The value of n is : ");
+    scanf("%d",&n);
+    for(int i=0;i<10;i++){//for loop of i going till 10;
+        Arr[i]=n*(i+1);//keeping arr[i]=n*(i+1)give s nx1,2,3
+    }
+    for(int i=0;i<10;i++){
+        printf("%dx%d=%d\n",n,i+1,Arr[i]);
+    }
+    
+    return 0;
+}
+
+.............
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+imp 
+//reversing order of an array
+#include <stdio.h>
+void reverse(int *arr,int n){////////////////comment out and detail explination here while revision :>
+    int temp;
+    for(int i=0;i<(5/2);i++){
+        temp = arr[i];
+        arr[i]=arr[n-i-1];
+        arr[n-i-1]=temp;
+    }
+}
+int main()
+{
+    int arr[5]={1,2,3,4,5};
+    reverse(arr,5);
+    for(int i=0;i<5;i++){
+        printf("The value of %d element i %d \n",i+1,arr[i]);
+        
+    }
+    return 0;
+}
+
+
+
+
+
+
+
+
+
