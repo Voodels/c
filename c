@@ -676,7 +676,7 @@ int main()
     do{
         printf("The value of i is %d\n",i);
         i++;
-    }while(i<=10);//semi condition is required and while is executed at least one time 
+    }while(i<=10);//semi condition is required and while is executed at least one time . 
     
     return 0 ;
 }*/
@@ -1244,5 +1244,29 @@ int main()
     for(int i=0;i<10;i++){
         printf("%dx%d=%d\n",n3,i+1,Marr[2][i]);
     }printf("\n");
+    return 0;
+}
+...........//////////////////////////////////
+//multiplication table of multiple digits through arrays and functions 
+
+#include <stdio.h>
+void printable(int *Marr,int num,int n){
+    printf("The multiplication table of %d is:\n",num);
+    for(int i=0;i<n;i++){
+        Marr[i]=num*(i+1);
+    }
+
+    for(int i=0;i<10;i++){
+        printf("%dx%d=%d\n",num,i+1,Marr[i]);
+    }
+    printf("======================================================");
+}
+int main()
+{
+    int Marr[3][10];
+    //multiplication table of 2
+    printable(Marr[0],2,10);
+    printable(Marr[1],7,10);
+    printable(Marr[2],9,10);
     return 0;
 }
