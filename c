@@ -1147,7 +1147,7 @@ int main(){
     for(int i =0;i<10;i++)
     {
         
-        if(arr[i]>0){
+        if(arr[i]>0){Patterns
         countposi++;
             
         }
@@ -1163,7 +1163,7 @@ int main(){
 }
 
 
-//Logic for multiplication table is :
+//Logic for table is :
 #include<stdio.h>
 int main(){
     int Arr[10];//declaring array ;
@@ -1201,10 +1201,48 @@ int main()
     int arr[5]={1,2,3,4,5};
     reverse(arr,5);
     for(int i=0;i<5;i++){
-        printf("The value of %d element i %d \n",i+1,arr[i]);
-        
+        printf("The value of %d element i }}%d \n",i+1,arr[i]);
+        }
     }
     return 0;
 }
+Write a program containing functions that counts the number of positive integers in an array.
+Create an array of size 3x10 containing multiplication tables of the numbers 2,7 and 9, respectively.
+Repeat problem 7 for a custom input given by the user.
+Create a three-dimensional array and print the address of its elements in increasing order.
 
 
+)))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((
+MULTIPLICATION TABLE OF 2,7,9;
+#include <stdio.h>
+
+int main()
+{
+    int Marr[3][10];
+    //multiplication table of 2
+    int n1=2;
+    for(int i=0;i<10;i++){
+    Marr[0][i]=n1*(i+1);
+    }
+    for(int i=0;i<10;i++){
+        printf("%dx%d=%d\n",n1,i+1,Marr[0][i]);
+    }printf("\n");
+    //multiplication table of 7
+        int n2=7;
+        
+    for(int i=0;i<10;i++){
+    Marr[1][i]=n2*(i+1);
+    }
+    for(int i=0;i<10;i++){
+        printf("%dx%d=%d\n",n2,i+1,Marr[1][i]);
+    }printf("\n");
+    //Multiplication table of 9
+        int n3=9;
+    for(int i=0;i<10;i++){
+    Marr[2][i]=n3*(i+1);
+    }
+    for(int i=0;i<10;i++){
+        printf("%dx%d=%d\n",n3,i+1,Marr[2][i]);
+    }printf("\n");
+    return 0;
+}
