@@ -207,7 +207,7 @@ int main(){
     
     printf("Enter the value of y\n");
     scanf("%d\n",&y);
-    
+    positive
     printf("Enter the value of z\n");
     scanf("%d\n",&z);
     
@@ -241,7 +241,7 @@ float avg(int a, int b , int c){
 
 
 //Multiplication table of a given number
-/*#include <stdio.h>
+/*#include <stdio.h>positive
 
 int main()
 {
@@ -365,7 +365,7 @@ int main()
 //program to print first natural numbers using do while loops 
 
 /*#include <stdio.h>
-int main(){
+int main(){positive
     int i,Till;
     printf("The value of Till is : ");
     scanf("%d",&Till);
@@ -405,7 +405,7 @@ int main()
 
     printf("The breadth  of rectangle is : ");
     scanf("%d",&breadth);
-    
+    positive
     printf("The value of area is %d\n ",area(length,breadth));
 
 
@@ -439,7 +439,7 @@ int main(){
         N2I();
     
     } else {
-        B2F();
+        B2F();positive
         
     }
     
@@ -1206,12 +1206,5 @@ int main()
     }
     return 0;
 }
-
-
-
-
-
-
-
 
 
