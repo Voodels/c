@@ -1289,3 +1289,52 @@ int main()
    }
     return 0;
 }
+0000000000000000000000000000000000000000
+/*#include <stdio.h>
+#include<string.h>
+int main()
+{
+    char *str = "Vighnesh";
+    int a = strlen(str);//----------------------This excudes the value of '\0'
+    printf("%d",a);
+
+    return 0;
+}*//*
+//STRCPY:
+#include <stdio.h>
+#include<string.h>
+int main()
+{
+    char *str = "Vighnesh";
+    char str2[45];
+    strcpy(str2,str);//this function id used to copy the content of second string into first function 
+    
+    printf("Now the str2 is %s ",str2);
+
+    return 0;
+}*//*
+//StrCat()
+#include <stdio.h>
+#include<string.h>
+int main()
+{
+    char str1[43] = "Hello";
+    char *str2 = "Vighnesh";
+    strcat(st1,st2);//----------------------This cancaenates and cuts and paste the value of a str 
+    printf("now the st1 is %s ",st1);
+    return 0;
+}*/
+//strcomp 
+
+
+#include <stdio.h>
+#include<string.h>
+int main()
+{
+    char str1[43] = "Hello";
+    char *str2 = "Hello";
+    int i = strcmp(str1,str2);//----------------------This compares the two strings return 0 if string is simillar
+    //''''''''''''''''''''''''''''''''''''''''''''''negative or positive 
+    printf("now the val is %d ",i);
+    return 0;
+}
