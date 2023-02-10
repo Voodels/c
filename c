@@ -1338,3 +1338,113 @@ int main()
     printf("now the val is %d ",i);
     return 0;
 }
+
+
+======================================================================
+Strings 
+=====================================================================
+//write a program to print length of a str
+/*#include<stdio.h>
+#include<string.h>
+
+int main(){
+  char name[300];
+  printf("Enter the name : ");
+  gets(name);
+  printf("The name : ");
+  puts(name);
+    int i = 0;
+  int count = 0;
+  //using loop;
+
+  while(name[i]!='\0'){
+    //if(name[i]){
+     count=count +1;
+     i++;
+  }
+//   int length=strlen(name);
+//   printf("%d",length);
+    printf("%d",count);
+    return 0;
+}
+*/
+//Concatination 
+/*
+#include<stdio.h>
+#include<string.h>
+
+int main(){
+  char name[300];
+  char name2[300];
+  printf("Enter the name : ");
+  gets(name);
+  printf("The name : ");
+  puts(name);
+  
+  printf("Enter the name2 : ");
+  gets(name2);
+  printf("The name2 : ");
+  puts(name2);
+  
+  //Cancatination
+//  //direct pre defined;
+//   strcat(name,name2);
+  
+//   puts(name);
+  int len1,len2;
+  len1 = strlen(name);
+  len2 = strlen(name2);
+  
+    int i = 0;
+    for(i=0;i<=len2;i++){
+        name[len1+i]=name2[i];
+    }
+    printf("%s\n",name);
+
+    return 0;
+} */
+//Compare; 
+ /*#include<stdio.h>
+#include<string.h>
+
+int main(){
+  char name[300];
+  char name2[300];
+  printf("Enter the name : ");
+  gets(name);
+  printf("The name : ");
+  puts(name);
+  
+  printf("Enter the name2 : ");
+  gets(name2);
+  printf("The name2 : ");
+  puts(name2);
+  
+  int i = 0,flag = 0;
+  for(i = 0;(name[i]!='/0')||(name2[i]!='/0');i++){
+      if(name[i]!=name2[i]){
+          flag++;
+          break;
+      }
+  
+  if(flag == 1){
+      printf("not same");
+      break;
+  }
+      else{
+          printf("same");
+                break;
+      }
+  }
+    return 0;
+} */
+//predefined functions use : > ;
+#include<stdio.h>
+#include<string.h>
+int main(){
+    char s1[30]={"String1"};
+    char s2[30]={"string1"};
+    int comp = strcmp(s1,s2);
+    printf("%d",comp);
+    return 0;
+}
