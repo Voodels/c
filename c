@@ -1468,3 +1468,14 @@ int main(){
     puts(s1);
 return 0;
 }
+=========================================================================
+File handeling 
+=========================================================================
+volatile memory non voatile memory
+FILE *fp;
+fopen("File name","mode")'
+fclose(fp)
+r r+
+w w+
+a a+
+fopen 
